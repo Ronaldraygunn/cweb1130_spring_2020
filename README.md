@@ -28,6 +28,16 @@ You are going to build a web application that allows end-users to create user pr
 		2.  Add routes under current routes to app.js file **[var createUserRouter = require('./routes/createuser'); var addUserRouter = require('./routes/adduser');
 		3.  Include statements to use the various routes defined in route files.  **[app.use('/create', createUserRouter);  app.use('/adduser', addUserRouter);]**
 	4.  Create a model folder and add a file called **[user.js]**
+	5.  Create a file called users.json within the root of your project folder and add the following code:
+	```json
+		[{
+			"firstName":"John",
+			"lastName":"Doe",
+			"email":"jdoe@dunwoody.edu",
+			"password":"password01"
+		  }
+		]
+	```
 ### Step 4 - Implement Business (Model) Logic
 1.  **Business (Model) Logic** - What are attributes and behavior that each user need to have?  
 	1. Each user will have a first name, last name, email and password.
